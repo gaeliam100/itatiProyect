@@ -1,0 +1,11 @@
+---
+interface Props {
+	titleP: string;
+}
+
+const { titleP } = Astro.props;
+---
+<p class="text-2xl text-emerald-400">
+    {titleP}
+    <span>&rarr;</span>
+</p>

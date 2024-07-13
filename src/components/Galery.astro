@@ -1,0 +1,34 @@
+---
+import { Image } from 'astro:assets'
+
+import Slide1 from '../../src/assets/Itati6.jpeg'
+import Slide2 from '../../src/assets/Itati7.jpeg'
+import Slide3 from '../../src/assets/Itati5.jpeg'
+import Slide4 from '../../src/assets/Itati3.jpeg'
+import Slide5 from '../../src/assets/Itati4.jpeg'
+import Slide6 from '../../src/assets/Itati1.jpeg'
+---
+
+
+<section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
+    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
+        <Image src={Slide6} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+    </div>
+    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
+        <Image src={Slide3} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+    </div>
+    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12  rotate-2 rounded-[15px]">
+        <Image src={Slide5} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+    </div>
+</section>
+<section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
+    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
+        <Image src={Slide1} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+    </div>
+    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12  -rotate-2 rounded-[15px]">
+        <Image src={Slide2} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+    </div>
+    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
+        <Image src={Slide4} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+    </div>
+</section>

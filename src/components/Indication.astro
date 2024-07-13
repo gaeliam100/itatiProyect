@@ -4,14 +4,14 @@ import Second from '../icons/Second.astro'
 // import Third from '../icons/Third.astro'
 ---
 
-<section class="bg-no-repeat bg-cover relative pb-14 min-h-screen w-full max-w-[100vw]">
-<div class="mx-auto flex flex-col max-w-7xl px-6 pt-32">
-<h1 class="uppercase text-white mb-10 text-left text-3xl lg:text-5xl font-bold tracking-wider leading-loose max-w-4xl text-balance">
+<section class="bg-no-repeat bg-image-brig bg-cover relative pb-14 min-h-screen w-full max-w-[100vw]">
+<div id="overlay" class="mx-auto flex flex-col max-w-7xl px-6 pt-32">
+<h1 class="uppercase z-10 text-white mb-10 text-left text-3xl lg:text-5xl font-bold tracking-wider leading-loose max-w-4xl text-balance">
     Código de vestimenta 
 </h1>
-<p class="max-w-3xl text-white text-pretty text-2xl px-2 mb-10">
+<p class="max-w-3xl z-10 text-white text-pretty text-2xl px-2 mb-10">
     Para asegurar la esencia y el respeto que la ocasión merece, solicitamos a todos nuestros invitados adherirse al siguiente código de vestimenta:</p>
-<ul class="flex flex-col text-white gap-y-10 text-2xl pl-4 font-extralight">
+<ul class="flex z-10  flex-col text-white gap-y-10 text-2xl pl-4 font-extralight">
     <li class="flex gap-x-6 items-center">
         <!-- <Third/> -->
     <span>
@@ -24,8 +24,27 @@ import Second from '../icons/Second.astro'
     </span>
     </li>
     </ul>
-        <section class="w-full flex justify-center my-8">
+        <!-- <section class="w-full flex justify-center my-8">
             <img class="rounded-xl shadow-lg" src="https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQf9Y-D6FTzsO1-KDKw_RKkaOb6omexs-3J3cH5zWuxBXP9IA_CAMOGlMXJM0T93FTBWOpdtvw8cvE_NXBgJKH3zPvR8sV6tMduAHjz7HWkXj1yO2BAe4h0PARj2czKnYHNQWvK1_9diZ_bVIr08tQbQ5XgM.jpg?r=43a" alt="">
-        </section>
+        </section> -->
 </div>
 </section>
+
+<style>
+    .bg-image-brig {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        background-image: url('https://dnm.nflximg.net/api/v6/BvVbc2Wxr2w6QuoANoSpJKEIWjQ/AAAAQf9Y-D6FTzsO1-KDKw_RKkaOb6omexs-3J3cH5zWuxBXP9IA_CAMOGlMXJM0T93FTBWOpdtvw8cvE_NXBgJKH3zPvR8sV6tMduAHjz7HWkXj1yO2BAe4h0PARj2czKnYHNQWvK1_9diZ_bVIr08tQbQ5XgM.jpg?r=43a"');
+    }
+    #overlay::before {
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+    }
+</style>;

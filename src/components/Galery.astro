@@ -9,26 +9,59 @@ import Slide5 from '../../src/assets/Itati4.jpeg'
 import Slide6 from '../../src/assets/Itati1.jpeg'
 ---
 
+<section class="w-full bgimage-galery">
+    <h1 class="text-white h1 mt-12">Instantes Únicos</h1>
+    <section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
+        <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
+            <Image src={Slide6} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+        </div>
+        <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
+            <Image src={Slide3} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+        </div>
+        <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12  rotate-2 rounded-[15px]">
+            <Image src={Slide5} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+        </div>
+    </section>
+    <section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
+        <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
+            <Image src={Slide1} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+        </div>
+        <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12  -rotate-2 rounded-[15px]">
+            <Image src={Slide2} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+        </div>
+        <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
+            <Image src={Slide4} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
+        </div>
+    </section>
+</section>
 
-<section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
-        <Image src={Slide6} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
-    </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
-        <Image src={Slide3} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
-    </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12  rotate-2 rounded-[15px]">
-        <Image src={Slide5} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
-    </div>
-</section>
-<section class="my-10 flex justify-center gap-5 overflow-hidden py-4 sm:gap-10">
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 rotate-2 rounded-[15px]">
-        <Image src={Slide1} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
-    </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12  -rotate-2 rounded-[15px]">
-        <Image src={Slide2} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
-    </div>
-    <div class="relative w-44 flex-none overflow-hidden bg-white dark:bg-pacamara-dark sm:w-3/12 -rotate-2 rounded-[15px]">
-        <Image src={Slide4} width={800} alt="" class="object-cover image-shine h-[300px] md:h-[500px]" />
-    </div>
-</section>
+<style>
+    	.h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+        padding: 25px;
+		text-align: center;
+		margin-bottom: 1em;
+	    }
+    .text-gradient {
+        background-image: var(--accent-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 400%;
+        background-position: 0%;
+    }
+
+        
+        @media screen and (min-width: 240px and max-width: 600px) {
+            .h1{
+            font-size: 2.3rem;
+		    font-weight: 700;
+            padding: 25px;
+		    line-height: 1;
+		    text-align: center;
+		    margin-bottom: 1em;
+            }
+            
+        }
+</style>

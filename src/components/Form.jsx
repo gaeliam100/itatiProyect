@@ -38,7 +38,7 @@ export const Form = () => {
 
   return (
     <form onSubmit={handleSubmit} class="container bgimage  text-white mx-auto w-full max-w-4xl h-96 py-4 mt-10 p-4 rounded-2xl">
-      <h1 class="text-2xl text-center font-bold mb-6">Confirma tu asistencia</h1>
+      <h1 class="h1 text-center font-bold mb-6">Confirma tu asistencia</h1>
       <label for="name">Nombre Completo</label>
       <input required id="name" name="name" type='text' class='w-full text-black py-2 px-3 rounded-xl mt-1 mb-2' value={data.name} onChange={handleChange} />
       <div class="flex flex-row gap-5">
